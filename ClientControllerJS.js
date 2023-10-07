@@ -2,7 +2,7 @@ const url = "https://resturant1.onrender.com";
 
 export async function newClient(name, email, password, confirmPassword) {
   try {
-    const res = await fetch(url + "addClient", {
+    const res = await fetch(url + "/addClient", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
