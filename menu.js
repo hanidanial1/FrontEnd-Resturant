@@ -14,7 +14,7 @@ export function renderMenu1(arrayFromData) {
 
   arrayFromData.forEach((menuItem) => {
     const col = document.createElement("div");
-    col.classList.add("col-md-6", "mb-4");
+    col.classList.add("col-md-6", "mb-4" , "border-0");
 
     const card = document.createElement("div");
     card.classList.add("card");
