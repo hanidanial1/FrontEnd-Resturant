@@ -53,7 +53,7 @@ async function workerInputsForEditingOrAdding() {
     formData.append("price", priceInput.value);
     const token = { token: localStorage.getItem("token") || "" };
     try {
-      const res = await fetch(`${url}addMeal`, {
+      const res = await fetch(`${url}/ddMeal`, {
         method: "POST",
         headers: token,
         body: formData,
