@@ -7,20 +7,20 @@ const mainBody = document.querySelector("#mainBody");
 
 export function renderMenu1(arrayFromData) {
   const container = document.createElement("div");
-  container.classList = "container", "mt-4";
+  container.classList.add("container", "mt-4");
 
   const row = document.createElement("div");
   row.classList.add("row", "justify-content-center");
 
   arrayFromData.forEach((menuItem) => {
     const col = document.createElement("div");
-    col.classList.add("col-md-6", "mb-4" , "border-0");
+    col.classList.add("col-md-6", "mb-4");
 
     const card = document.createElement("div");
     card.classList.add("card");
 
     const cardBody = document.createElement("div");
-    cardBody.classList.add("card-body border-0");
+    cardBody.classList.add("card-body");
 
     const mealImage = document.createElement("img");
     mealImage.classList = "meal-image text-center ";
