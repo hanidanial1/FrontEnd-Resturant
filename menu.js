@@ -7,7 +7,7 @@ const mainBody = document.querySelector("#mainBody");
 
 export function renderMenu1(arrayFromData) {
   const container = document.createElement("div");
-  container.classList.add("container", "mt-4 b-0");
+  container.classList = "container", "mt-4 b-0";
 
   const row = document.createElement("div");
   row.classList.add("row", "justify-content-center");
