@@ -1,8 +1,8 @@
-import { gettingImg, deleting, pizaa } from "./menuController.js";
+import { gettingImg, deleting, pizaa, workerMenu } from "./menuController.js";
 
 const title = document.querySelector("#title");
 const mainBody = document.querySelector("#mainBody");
-const url = "https://resturant1.onrender.com/";
+const url = "https://resturant1.onrender.com";
 
 //creating inputs for DOM
 function createInputElement(type, name, placeholder, classNames) {
@@ -58,8 +58,8 @@ async function workerInputsForEditingOrAdding() {
         headers: token,
         body: formData,
       });
-
-      // Rendering from database
+      const data = await res.json()
+      workerMenu()
     } catch (error) {
       throw error;
     }
@@ -73,6 +73,7 @@ async function workerInputsForEditingOrAdding() {
     submitBtn,
     searchInput
   );
+
 }
 
 export async function workerMenuEdit(arrayFromData) {

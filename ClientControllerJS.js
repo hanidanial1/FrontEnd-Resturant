@@ -1,4 +1,4 @@
-const url = "https://resturant1.onrender.com/";
+const url = `https://resturant1.onrender.com`;
 
 export async function newClient(name, email, password, confirmPassword) {
   try {
