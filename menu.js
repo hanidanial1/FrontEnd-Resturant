@@ -20,7 +20,7 @@ export function renderMenu1(arrayFromData) {
     card.classList.add("card");
 
     const cardBody = document.createElement("div");
-    cardBody.classList.add("card-body");
+    cardBody.classList.add("card-body border-0");
 
     const mealImage = document.createElement("img");
     mealImage.classList = "meal-image text-center ";
